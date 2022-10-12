@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Neopraxis</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!--SCRIPT DE JQUERY-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="app.js"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+
+        <!--ANIMATE CSS-->
+        <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Comienza una terapia Psicológica </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="blog.php">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="agendarc.php">Agendar Cita</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="error1.html">Para empresas</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="registro.php">Registrate</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+      <img class="d-block w-100" height="500" src="assets/img/principal.jpg" alt="First slide">
+
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" height="500" src="assets/img/contacto.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" height="500" src="assets/img/administrador.png" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    
+        <!-- Main Content-->
+        <script type="text/javascript">
+            
+        $(document).ready(function(){
+
+            $("p").mouseover(esconder);
+            $("p").mouseout(mostrar);
+
+            function esconder(){
+                $(this).css("background-color", "yellow");
+            }
+
+             function mostrar(){
+                $(this).css("background-color", "white");
+            }
+        });
+
+
+        </script>
+
+         <style>
+
+            h2 {
+
+                animation: rubberBand;
+                animation-duration: 16s;
+
+
+            }
+
+
+            p {
+
+                animation: flash;
+                animation-duration: 5s;
+
+
+            }
+
+
+            
+
+
+
+
+        </style>
+
+     
+
+
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview" >
+                         <div class="texts">
+                    
+                            <h2 id="hola">Psicólogos profesionales, diversos y empáticos.</h2>
+                            <script>
+                                $(document).ready(inicio);
+                                
+                                function inicio(){
+                                    $("#hola").click(cambiarFormato);
+                                }
+                                function cambiarFormato(){
+                                     $("#hola").css("color","blue");
+                                }
+                            </script>
+                            <p>Todos los psicólogos y psicoterapeutas pasan por un proceso de admision en donde valoramos su formación, certificaciones, experiencia y cualidades personales.<br><br> Asi nos aseguramos que sumamos a los mejores psicólos al equipo.</p>
+                        </a>
+
+
+                       
+
+                        <center><div id="evento"></div></center>
+
+ <style type="text/css">
+
+                            #evento{
+
+                        width: 300px;
+                        height: 250px;
+                        background-image: url(assets/img/ansiedad.jpg);
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                    
+
+
+                            }
+                    
+                        </style>
+
+                         <center><button id="toggle" class="btn btn-primary text-uppercase">Mostrar/desaparecer Imagen</button></center>
+                        <script type="text/javascript">
+
+                            $(document).ready(hola);
+
+function hola(){
+
+    $('#toggle').click(function(){
+        $('#evento').toggle(2000);
+    
+});
+
+
+}
+                            
+
+
+
+                        </script>
+
+
+
+
+                    </center>
+                    </div>
+
+
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <h2 class="post-title">Terapeutas especializados en diferentes tipos de terapia Psicológica:</h2><p>
+                        •Psicoterapeutas Sistémicos.<br>
+                        •Psicoterapeutas con enfoque Breve.<br>
+                        •Psicoterapeutas Cognitivo.<br>
+                        •Conductuales.<br>
+                        •Psicoanalistas.<br>
+                        •Psicoterapeutas con enfoque de Género y Comunidad LGBT+.<br>
+                        •Psicoterapeutas Humanistas.
+
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                            <h2 class="post-title">Te ayudamos a encontrar al terapeuta y tipo de terapia psicológica indicada para ti.</h2>
+                            <p> Nuestro equipo se ha vuelto experto en hacer los mejores Matches entre psicólogos y pacientes. Cada persona es diferente y a veces no sabemos que es lo que necesitamos para sentirnos mejor.
+                        </p>
+
+
+
+
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                            <h2 class="post-title">¿Cual es el motivo de consulta?</h2>
+                            <p> Nos interesa conocer tu situación actual, tus objetivos y lo qué te motivó a buscar ayuda psicológica:<br>
+                            •Depresión<br>
+                            •Ansiedad<br>
+                            •Problemas de Pareja y/o Familiares<br>
+                            •Estrés laboral<br>
+                            •Codependencia,Etc.<br>
+                        </p>
+        
+                    </div>
+                    <hr class="my-4" />
+                    <!-- Pager-->
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase"  class="animate__animated animate__rubberBand" href="agendarc.php">SOLICITA UNA CITA→</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
